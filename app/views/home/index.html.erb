@@ -1,0 +1,10 @@
+<h1>Hello world</h1>
+
+<% if current_user%>
+  <h2><%= current_user.email %></h2>
+
+  <%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %>
+
+<% else %>
+  <%= link_to 'Sign In', new_user_session_path %>
+<% end%>
