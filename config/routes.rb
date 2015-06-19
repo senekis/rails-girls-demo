@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     :verify_authy => "/verify-token",
     :enable_authy => "/enable-two-factor",
     :verify_authy_installation => "/verify-installation"
+  }, :controllers => {
+    devise_authy: 'custom/devise_authy'
   }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
