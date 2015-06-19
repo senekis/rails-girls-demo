@@ -39,9 +39,15 @@ GEM
     arel (6.0.0)
     authy (2.4.2)
       httpclient (>= 2.5.3.3)
+    autoprefixer-rails (5.2.0.1)
+      execjs
+      json
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.5)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -160,6 +166,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.5)
   byebug
   coffee-rails (~> 4.1.0)
   devise
