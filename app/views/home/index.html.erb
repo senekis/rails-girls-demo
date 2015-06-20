@@ -1,12 +1,6 @@
 <h1>Rails Girls Demo</h1>
 
 <% if current_user %>
-  <% if current_user.authy_enabled? %>
-    <%= link_to 'Disable Two-Factor', user_disable_authy_path, method: 'post' %><br />
-  <% else %>
-    <%= link_to 'Enable Two-Factor', user_enable_authy_path, "data-no-turbolink" => true %><br />
-  <% end %>
-
   <%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %>
 <% else %>
   <%= link_to 'Sign In', new_user_session_path %>
